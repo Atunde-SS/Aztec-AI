@@ -34,8 +34,8 @@ You will need [Node.js](https://nodejs.org/) (v18 or later) installed on your ma
 
 1.  **Clone the repository:**
     ```bash
-    git clone https://github.com/your-username/aztec-ai-tutor.git
-    cd aztec-ai-tutor
+    git clone https://github.com/Atunde-SS/Aztec-AI.git
+    cd Aztec-AI
     ```
 
 2.  **API Key Configuration:**
