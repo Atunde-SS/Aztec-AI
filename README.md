@@ -39,7 +39,7 @@ You will need [Node.js](https://nodejs.org/) (v18 or later) installed on your ma
     ```
 
 2.  **API Key Configuration:**
-    This application requires a Google Gemini API key to function. The app has a smart key-handling mechanism:
+    This application requires a Google Gemini API key to function. The app has a smart key handling mechanism:
 
     *   **For Public Users (or if no dev key is provided):** The app will prompt the user to enter their own API key, which is then stored securely in their browser's local storage.
     *   **For Local Development:** You can bypass the user prompt by providing your own key. Create a file named `.env` in the root of the project and add your API key:
@@ -63,6 +63,10 @@ This project is a modern static web app and should be served by a local developm
 2.  **Run the server from the project root:**
     ```bash
     serve .
+
+    #or
+
+    npm run dev
     ```
     The application will now be running at a local URL (e.g., `http://localhost:3000`).
 
@@ -79,7 +83,6 @@ You can easily deploy this application to any static hosting service like Vercel
     -   **Variable Name:** `API_KEY`
     -   **Variable Value:** Your Google Gemini API Key
 
-    **Important Note:** For a static deployment to read this environment variable, you would typically need a build step (e.g., with Vite or Create React App) to inject it. As this project is set up to run without a build step, the deployed app will default to asking the end-user for their key via the modal. This is the most secure approach for a public-facing application if you do not wish to use your own key for all users.
 
 ## How the API Key Logic Works
 
@@ -88,7 +91,7 @@ The application prioritizes API keys in the following order:
 2.  **User's Local Storage**: If no developer key is found, it checks the browser's `localStorage` for a key the user may have previously saved.
 3.  **User Prompt**: If no key is found in either of the above locations, it displays the pop-up modal, asking the user to provide their key.
 
-This ensures a smooth experience for developers while making the public application secure and functional for everyone.
+This ensures a smooth experience for developers while making the public application secure and functional for non devs.
 
 ---
 
