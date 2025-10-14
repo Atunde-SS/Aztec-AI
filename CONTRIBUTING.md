@@ -29,7 +29,7 @@ Build intuition for Aztec's hybrid zk-rollup: Public execution for scalability, 
 ### Learning Path
 1. Scan [`awesome-aztec/README.md`](https://github.com/AztecProtocol/awesome-aztec/blob/main/README.md) for patterns like token standards—non-devs focus on "ERC-20 with privacy."
 2. Read [`aztec-packages/README.md`](https://github.com/AztecProtocol/aztec-packages) for ecosystem map (e.g., Barretenberg for proving).
-3. View external: [Aztec Litepaper](https://docs.aztec.network/protocol/overview) (linked from repos) for diagrams.
+3. View external: [Aztec Litepaper](https://docs.aztec.network/developers/docs/concepts) (linked from repos) for diagrams.
 
 **Tips**: Visualize zk as "math magic" hiding data. Connect to Ethereum: How does it fix public tx leaks? Use for motivation.
 
